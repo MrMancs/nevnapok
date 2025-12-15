@@ -40,3 +40,51 @@
 .read-the-docs {
   color: #888;
 }
+
+.container {
+  height: 100vh;
+}
+
+.tableDiv {
+  overflow: auto;
+  scroll-behavior: smooth;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 1px gray;
+}
+
+.nameForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nameForm > input{
+  width: 70%;
+}
+
+.searchByNameDiv {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchByNameDivList {
+  text-align: left;
+  position: relative;
+}
+
+.datePicker {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .nameForm {
+    flex-direction: column;
+  }
+
+  .nameForm > input{
+    width: 100%;
+    margin-bottom: 5px;
+  }   
+}
